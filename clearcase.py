@@ -30,7 +30,7 @@ class ClearcaseExplorerCommand(ClearcaseCommand):
 
 class ClearcaseCheckoutCommand(ClearcaseCommand):
     def run(self):
-        cmd = ['cleartool', 'co -nc -unr', self.window.active_view().file_name()]
+        cmd = ['cleartool', 'co', '-nc', '-unr', self.window.active_view().file_name()]
         super(ClearcaseCheckoutCommand, self).run(cmd)
 
 
